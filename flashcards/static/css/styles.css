@@ -1,0 +1,159 @@
+* {
+	font-family: 'Bitter', serif;
+}
+
+/* hamburger menu */
+.icon-bar { background-color: #87421F !important; }
+
+/* remove default link settings */
+a, a:link, a:visited, a:hover {
+	text-decoration: none;
+	color: #87421F;
+	font-weight: bold;
+	font-size: 19px;
+}
+
+.nav-link {
+	font-size: 15px;
+}
+
+.title {
+	color: #87421F;
+	text-align: center;
+	font-family: 'Bitter', serif;
+}
+
+/* this is how to have no space between navbar and jumbotron */
+.navbar, .jumbotron { margin-bottom: 0; }
+
+
+.jumbotron {
+	text-align: center;
+	background: #fdf5ef;
+}
+
+.appname { color: #87421F !important; }
+
+.appcatch {
+	 color: #855E42;
+	 font-weight: 500 !important;
+ }
+
+/* features */
+#featurestext { text-align: center; }
+
+.features-container { 
+	padding: 20px;
+	background: #fdfdfd; 
+}
+
+.explanation { font-weight: bold; }
+
+/* features */
+
+.example {
+	border: solid;
+	padding: 22px;
+	overflow: hidden;
+	border-radius: 20px;
+	height: 230px;
+	color: #2A363B;
+	box-shadow: 10px 4px 5px #888888;
+	background: #fdfdfd;
+}
+
+.cardexample, .quizexamplename, .deckexampletitle { text-align: center; }
+
+.hideexample { background: #2A363B; }
+
+.hideexample:hover { background: #fdfdfd; }
+
+.questionexample { font-size: 15px; }
+
+.listexample {
+	color: RoyalBlue;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+/* About */
+
+.aboutcontainer {
+	color: #855E42;
+	background: #fdfdfd; 
+}
+
+/* Register */
+
+label { font-size: 20px; }
+
+.formcol {
+	border: solid #855E42;
+	margin-top: 5px;
+	padding: 20px;
+	border-radius: 10px;
+	color: #855E42; 
+	box-shadow: 10px 4px 5px #888888;
+	background: #fdfdfd;
+}
+
+.formcontainerdiv {
+	background: #fdf5ef;
+	min-height: 100%;
+	height: 100%;
+	padding: 10px;
+}
+
+/* lists */
+
+.decklistcontainer, .quizlistcontainer { text-align: center; }
+
+/* Deck list */
+#welcomemessage {
+	color: #855E42;
+}
+
+.listcontainer { background: #fdfdfd; }
+
+.decklisttitle {
+	color: #87421F;
+}
+
+.single {
+	border: solid;
+	padding: 15px;
+	margin: 10px;
+	border-radius: 20px;
+	height: 200px;
+	overflow: auto;
+	text-align: center;
+	background: #fdfdfd; 
+	box-shadow: 5px 3px 5px #888888;
+}
+
+
+#hidedeck, #hidequiz { 
+	font-size: 15px;
+	cursor: pointer;
+}
+
+/* quiz list */
+.quizlistcontainer {
+	background: #fdf5ef;
+}
+
+.emptyspace {
+	background: #fdf5ef;
+	height: 100px;
+}
+
+/* cards */
+#hideterms, #hidedefinitions { cursor: pointer; text-align: center; }
+.blacken { background: #2A363B; }
+
+.blacken:hover { background: #fdfdfd; }
+
+.nocontent {
+	text-align: center;
+	color: #87421F;
+}
