@@ -9,23 +9,11 @@ from django.shortcuts import redirect
 from django.views.generic.edit import CreateView
 
 
-# Create your views here.
-def signup(request):
-    if request.method == 'POST':
-        form = UserCreationForm(request.POST)
-        if form.is_valid():
-            form.save()
-            messages.success(request, 'Account created successfully')
-            username = form.cleaned_data.get('username')
-            raw_password = form.cleaned_data.get('password1')
-            user = authenticate(username=username, password=raw_password)
-            login(request, user)
-            return redirect('show_all_decks')
-    else:
-        form = UserCreationForm()
-    return render(request, 'signup.html', {'form': form})
+def redirect_to_all_decks(request):
+    """Redirects a request to all_decks."""
+    return show_all_decks(request)
 
-    
+
 def show_all_cards(request):
     c_list = Card.objects.all()
     context = {'list_of_cards' : c_list}

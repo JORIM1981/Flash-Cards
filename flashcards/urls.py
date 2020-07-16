@@ -6,8 +6,7 @@ from .views import DeckCreate
 # app_name = 'cardmaker'
 
 urlpatterns = [
-    path('', views.show_all_decks, name='all_decks'),
-    path('', views.signup, name='sign_up'),
+    path('', views.redirect_to_all_decks, name='home'),
     path('card/all', views.show_all_cards, name='all_cards'),
     path('card/delete/<int:card_id>/', views.delete_card, name="delete_card"),
     path('deck/all', views.show_all_decks, name='all_decks'),
