@@ -15,7 +15,8 @@ class Deck(models.Model):
         return self.title
 
     def get_absolute_url(self):
-        return reverse('flashcards:create_cards')
+        """Returns the canonical URL for a deck."""
+        return reverse('flashcards:create_cards', args=[str(self.id)])
 
 
 class Card(models.Model):
