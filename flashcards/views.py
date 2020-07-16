@@ -5,6 +5,7 @@ from django.contrib import messages
 from .models import Card, Deck, StudySet, StudentDeck
 from .forms import CardForm, DeckForm, CardFormSet
 from django.shortcuts import redirect
+from django.contrib.auth.decorators import login_required
 
 from django.views.generic.edit import CreateView
 
@@ -13,7 +14,7 @@ def redirect_to_all_decks(request):
     """Redirects a request to all_decks."""
     return show_all_decks(request)
 
-
+@login_required(login_url='/accounts/login/')
 def show_all_cards(request):
     c_list = Card.objects.all()
     context = {'list_of_cards' : c_list}
